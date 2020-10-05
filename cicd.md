@@ -17,3 +17,8 @@
 15. helm init --service-account tiller --upgrade
 16. install nginx-ingress
 
+## Setup HTTPS
+1. buy a domain from domain.google.com
+2. install cert-manager usin helm get https setup automatically.
+3. create an issuer.yaml and certificate.yaml files that will be used by cert-manager to generate cert.
+4. update ingress to tell it to use certs.
